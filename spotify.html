@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style2.css">
+  </head>
+
+  <script>
+    var slideIndex = 1;
+    window.onload = showSlides(slideIndex);
+    // Next/previous controls
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("slides");
+    if (n > slides.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+    }
+      slides[slideIndex-1].style.display = "block"; 
+    }
+  </script>
+  <body>
+
+    <h1 class="title"> This is Ariella Navarro </h1>
+    
+    <div class="slidershow middle">
+  
+        <div class="slides s1">
+            <img src="1.jpg" alt="" class="image">          
+        </div>
+        <div class="slides">
+            <img src="2.jpg" alt="">
+            <div class="text2"> <mark id= "black"> I'm a junior at UC Berkeley studying Computer Science</mark></div>
+        </div>
+        <div class="slides">
+          <div class="text3"> I &#128154 music </div>
+        </div>
+        <div class="slides">
+          <img src="3.jpg" alt="" class="image">
+            <div class="text2"> <mark id= "black"> I've always been a band kid. . .</mark></div>
+        </div>
+        <div class="slides">
+          <img src="4.jpg" alt="" class="image">
+            <div class="text2"> <mark id= "black"> . . .and an orchestra kid </mark> </div>
+        </div>
+        <div class="slides">
+          <div class="text3"> I &#128154 tech </div>
+        </div>
+        <div class="slides">
+          <img src="5.jpg" alt="" class="image">
+            <div class="text2"> <mark id= "black"> I used to be very involved competitive robotics </mark> </div>
+        </div>
+        <div class="slides">
+          <img src="6.jpg" alt="">
+          <div class="text2"> <mark id= "black"> I created a music game called Song Savant</a> </mark> </div>
+        </div>
+        <div class="slides">
+          <img src="6.jpg" alt="">
+          <div class="text2"> <mark id= "black"> I used React, Node, CSS, and the Spotify API </mark> </div>
+        </div>
+        <div class="slides">
+          <img src="6.jpg" alt="">
+          <div class="text2"> <mark id= "black"> Combining my two passions, this is easily my favorite project </mark> </div>
+        </div>
+        <div class="slides">
+          <div class="text3"> I want to continue doing what I love at Spotify </div>
+        </div>
+
+
+      </div>
+
+  </body>
+
+    </div>
+
+    <div class="navigation">
+      <a href="#" class="previous round" onclick="plusSlides(-1)">&#8249;</a>
+      <a href="#" class="play round" onclick="plusSlides(1)" >&#9658;</a>
+      <a href="#" class="next round" onclick="plusSlides(1)">&#8250;</a>
+    </div>
+
+  </body>
+</html>
