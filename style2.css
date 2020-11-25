@@ -144,12 +144,23 @@ a:hover {
   text-align: center;
 }
 
+
 .text3 {
   color: #f2f2f2;
   font-size: 36px;
   padding: 8px 12px;
   position: absolute;
   bottom: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+.text4 {
+  color: #f2f2f2;
+  font-size: 36px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 100px;
   width: 100%;
   text-align: center;
 }
